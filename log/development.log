@@ -1,0 +1,312 @@
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 15:32:01 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered home/_navbar.html.erb (0.3ms)
+  Rendered home/_new_question_form.html.erb (0.9ms)
+Completed 200 OK in 1418ms (Views: 1407.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-0f221766a48af1762dc031f3ef16f6e4.css?body=1" for 127.0.0.1 at 2017-05-29 15:32:03 -0400
+
+
+Started GET "/assets/application-badbc211fae676f71dbb53d32dfb7bb4.css?body=1" for 127.0.0.1 at 2017-05-29 15:32:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2017-05-29 15:32:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2017-05-29 15:32:03 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2017-05-29 15:32:03 -0400
+
+
+Started GET "/assets/application-001948a807d6467a657420955d9f0c1c.js?body=1" for 127.0.0.1 at 2017-05-29 15:32:03 -0400
+
+
+Started GET "/assets/home-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2017-05-29 15:32:03 -0400
+
+
+Started GET "/questions/12" for 127.0.0.1 at 2017-05-29 15:32:12 -0400
+Processing by HomeController#question as HTML
+  Parameters: {"id"=>"12"}
+  Rendered home/_new_answer_form.html.erb (0.9ms)
+  Rendered home/question.html.erb within layouts/application (2.9ms)
+  Rendered home/_navbar.html.erb (0.4ms)
+  Rendered home/_new_question_form.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-05-29 15:38:02 -0400
+Processing by HomeController#temp as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvFpX/YiMcirPowWiv2N5s5SfT0Mc69wtoeMCEBO5uZ988Ao/aj50gd1olpKDds+gih+gBSI9u5iy8YMrGldTQ==", "email"=>"booth.brandon4@gmail.com", "question_body"=>"asdf"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 15:38:02 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/12" for 127.0.0.1 at 2017-05-29 15:42:53 -0400
+Processing by HomeController#question as HTML
+  Parameters: {"id"=>"12"}
+  Rendered home/_new_answer_form.html.erb (0.4ms)
+  Rendered home/question.html.erb within layouts/application (2.3ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/answers" for 127.0.0.1 at 2017-05-29 15:45:39 -0400
+Processing by HomeController#temp as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PaDZY/5wogoEo/xCDljI89ydDKa3QWGJ02Nq4ZPjIWByonAU9fpqEKjo0g7OqJ4rkOcPG6+6OBcHLyDlf8Sayw==", "email"=>"booth.brandon4@gmail.com", "answer_body"=>"a"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 15:45:39 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/12" for 127.0.0.1 at 2017-05-29 15:45:45 -0400
+Processing by HomeController#question as HTML
+  Parameters: {"id"=>"12"}
+  Rendered home/_new_answer_form.html.erb (0.4ms)
+  Rendered home/question.html.erb within layouts/application (2.7ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/answers" for 127.0.0.1 at 2017-05-29 15:45:56 -0400
+Processing by HomeController#temp as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cageZ+IGuhdRGzU0SHWA1jYweXDC3NAg9K80a1CioWw+qrcQ6YxyDf1QG3iIhdYOekp6zdonib4g435vvIUaxw==", "email"=>"booth.brandon4@gmail.com", "answer_body"=>"b"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 15:45:57 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.5ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateQuestions (20170529195145)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "body" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+SQLite3::SQLException: table "questions" already exists: CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "body" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateQuestions (20170529195145)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (31.9ms)[0m  [1mDROP TABLE "questions"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "body" text NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170529195145"]]
+  [1m[35m (140.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("email", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "booth.brandon4@gmail.com"], ["body", "How old is the universe?"], ["created_at", "2017-05-29 19:56:37.318203"], ["updated_at", "2017-05-29 19:56:37.318203"]]
+  [1m[36m (94.5ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:02:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 14ms
+
+NameError (uninitialized constant HomeController::Questions):
+  app/controllers/home_controller.rb:3:in `index'
+
+
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.6ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:05:02 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 10ms
+
+SyntaxError (/home/brandon/Websites/ruby-on-rails/ruby-tutorial/app/views/home/index.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/brandon/Websites/ruby-on-rails/ruby-tutorial/app/views/home/index.html.erb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/home/index.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/home/index.html.erb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:05:13 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/brandon/Websites/ruby-on-rails/ruby-tutorial/app/views/home/index.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/brandon/Websites/ruby-on-rails/ruby-tutorial/app/views/home/index.html.erb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/home/index.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/home/index.html.erb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.7ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:06:02 -0400
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered home/index.html.erb within layouts/application (30.9ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined local variable or method `q' for #<#<Class:0x00000004e1e778>:0x000000048bfa20>):
+     8:     <div class="media">
+     9:       <div class="media-left">
+    10:         <a href="#">
+    11:           <img class="media-object" src="<%= q.gravatar %>">
+    12:         </a>
+    13:       </div>
+    14:       <div class="media-body">
+  app/views/home/index.html.erb:11:in `block in _app_views_home_index_html_erb___2960027516290005574_38138240'
+  app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___2960027516290005574_38138240'
+
+
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:06:20 -0400
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (no data given):
+     8:     <div class="media">
+     9:       <div class="media-left">
+    10:         <a href="#">
+    11:           <img class="media-object" src="<%= e.gravatar %>">
+    12:         </a>
+    13:       </div>
+    14:       <div class="media-body">
+  app/models/question.rb:5:in `digest'
+  app/models/question.rb:5:in `hexdigest'
+  app/models/question.rb:5:in `gravatar'
+  app/views/home/index.html.erb:11:in `block in _app_views_home_index_html_erb___2960027516290005574_42895160'
+  app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___2960027516290005574_42895160'
+
+
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:07:30 -0400
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+  Rendered home/_navbar.html.erb (0.5ms)
+  Rendered home/_new_question_form.html.erb (1.0ms)
+Completed 200 OK in 1025ms (Views: 1020.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/home.self-03d2b8a059c048d0cd467837ad38142fefc9076aafa2d681163c64c43fe15584.css?body=1" for 127.0.0.1 at 2017-05-29 16:07:31 -0400
+
+
+Started GET "/assets/questions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-29 16:07:31 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-29 16:07:31 -0400
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-29 16:07:31 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-29 16:07:31 -0400
+
+
+Started GET "/assets/questions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-29 16:07:31 -0400
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2017-05-29 16:07:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:07:36 -0400
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered home/_navbar.html.erb (0.0ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("email", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "samer@on-site.com"], ["body", "Did it work?"], ["created_at", "2017-05-29 20:08:45.656210"], ["updated_at", "2017-05-29 20:08:45.656210"]]
+  [1m[36m (101.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:08:51 -0400
+Processing by HomeController#index as HTML
+  [1m[35mQuestion Load (1.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (1.2ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 1.4ms)
