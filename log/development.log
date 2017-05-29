@@ -640,3 +640,90 @@ Processing by HomeController#index as HTML
   Rendered home/_navbar.html.erb (0.7ms)
   Rendered home/_new_question_form.html.erb (0.4ms)
 Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT "answers".* FROM "answers"
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2017-05-29 16:51:45 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/_new_answer_form.html.erb (1.0ms)
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 3]]
+  Rendered questions/show.html.erb within layouts/application (3.3ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 24.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/answers" for 127.0.0.1 at 2017-05-29 16:51:51 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+VeK5kQykZq0onqS14nyp27OeYpbNYITNYJq1NtosIS2VSORT7hZgBjpVN4XeaR/IrR6N0PO243hziDQN08LLw==", "answer"=>{"question_id"=>"3", "email"=>"booth.brandon4@gmail.com", "body"=>"a"}}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "answers" ("question_id", "email", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 3], ["email", "booth.brandon4@gmail.com"], ["body", "a"], ["created_at", "2017-05-29 20:51:51.652991"], ["updated_at", "2017-05-29 20:51:51.652991"]]
+  [1m[35m (178.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 251ms
+
+LoadError (cannot load such file -- sucker_punch):
+  app/controllers/answers_controller.rb:7:in `create'
+
+
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/brandon/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers"[0m
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2017-05-29 16:59:04 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/_new_answer_form.html.erb (0.5ms)
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 3]]
+  Rendered questions/show.html.erb within layouts/application (7.4ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 29.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/answers" for 127.0.0.1 at 2017-05-29 16:59:10 -0400
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3NFxIA1KRFjhgSXcb3QfB7VgghUn0+YcpAP0LZUopneT09hXBsCMQk3KC5CvhEnf+RqBqD8ov4JwT74peQ8d3A==", "answer"=>{"question_id"=>"3", "email"=>"booth.brandon4@gmail.com", "body"=>"b"}}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "answers" ("question_id", "email", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 3], ["email", "booth.brandon4@gmail.com"], ["body", "b"], ["created_at", "2017-05-29 20:59:10.443078"], ["updated_at", "2017-05-29 20:59:10.443078"]]
+  [1m[35m (148.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/questions/3
+Completed 302 Found in 159ms (ActiveRecord: 149.6ms)
+
+
+Started GET "/questions/3" for 127.0.0.1 at 2017-05-29 16:59:10 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/_new_answer_form.html.erb (0.3ms)
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?  ORDER BY "answers"."created_at" DESC  [["question_id", 3]]
+  Rendered questions/show.html.erb within layouts/application (2.3ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-29 16:59:19 -0400
+Processing by HomeController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+  Rendered home/_navbar.html.erb (0.1ms)
+  Rendered home/_new_question_form.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.2ms)
