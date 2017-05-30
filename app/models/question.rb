@@ -5,3 +5,10 @@ class Question < ActiveRecord::Base
   has_many :answers
 
 end
+class Question < ActiveRecord::Base
+
+  include HasGravatar
+
+  has_many :question
+
+end
