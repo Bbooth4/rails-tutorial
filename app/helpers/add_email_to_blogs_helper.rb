@@ -1,0 +1,2 @@
+module AddEmailToBlogsHelper
+end

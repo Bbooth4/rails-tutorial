@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :add_email_to_blogs
+
+  resources :comments
+
+  resources :blogs
+
   resources :answers
 
   resources :questions

@@ -1,0 +1,2 @@
+class AddEmailToBlogsController < ApplicationController
+end
