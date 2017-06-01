@@ -1,9 +1,12 @@
 class BlogsController < ApplicationController
+  def index
+    @blog = Blogs.all
+
+    # @comment = @blog.comments.order(created_at: :desc)
+  end
 
   def show
-    @blog = Blog.find(params[:id])
-
-    @comment = @blog.answers.order(created_at: :desc)
+    
   end
 
   def create
@@ -15,7 +18,7 @@ class BlogsController < ApplicationController
   private
 
   def blog_params
-    params.require(:blog).permit(:email, :body)
+    params.require(:blogs).permit(:email, :body)
   end
 
 end
